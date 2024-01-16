@@ -134,6 +134,11 @@ ModeInterface.prototype.onCombineFeature = function() {};
 ModeInterface.prototype.onUncombineFeature = function() {};
 
 /**
+ * Triggered when the map update-state event is fired
+ */
+ModeInterface.prototype.updateState = function() {};
+
+/**
  * Triggered per feature on render to convert raw features into set of features for display on the map
  * See [styling draw](https://github.com/mapbox/mapbox-gl-draw/blob/main/API.md#styling-draw) for information about what geojson properties Draw uses as part of rendering.
  * @name MODE.toDisplayFeatures

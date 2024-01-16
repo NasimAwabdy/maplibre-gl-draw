@@ -128,6 +128,10 @@ export default function(ctx) {
 
   };
 
+  events.updateState = function(event) {
+    currentMode.updateState(event);
+  };
+
   events.keyup = function(event) {
     currentMode.keyup(event);
   };
@@ -206,6 +210,7 @@ export default function(ctx) {
       ctx.map.on('mousedown', events.mousedown);
       ctx.map.on('mouseup', events.mouseup);
       ctx.map.on('data', events.data);
+      ctx.map.on('update-state', events.updateState);
 
       ctx.map.on('touchmove', events.touchmove);
       ctx.map.on('touchstart', events.touchstart);
@@ -223,6 +228,7 @@ export default function(ctx) {
       ctx.map.off('mousedown', events.mousedown);
       ctx.map.off('mouseup', events.mouseup);
       ctx.map.off('data', events.data);
+      ctx.map.off('update-state', events.updateState);
 
       ctx.map.off('touchmove', events.touchmove);
       ctx.map.off('touchstart', events.touchstart);
