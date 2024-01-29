@@ -128,10 +128,6 @@ export default function(ctx) {
 
   };
 
-  events.updateState = function(event) {
-    currentMode.updateState(event);
-  };
-
   events.keyup = function(event) {
     currentMode.keyup(event);
   };
