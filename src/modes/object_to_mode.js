@@ -12,8 +12,7 @@ const eventMapper = {
   touchstart: 'onTouchStart',
   touchmove: 'onTouchMove',
   touchend: 'onTouchEnd',
-  tap: 'onTap',
-  updateState: 'OnUpdateState',
+  tap: 'onTap'
 };
 
 const eventKeys = Object.keys(eventMapper);

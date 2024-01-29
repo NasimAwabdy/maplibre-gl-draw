@@ -13,8 +13,7 @@ const ModeHandler = function(mode, DrawContext) {
     touchstart: [],
     touchmove: [],
     touchend: [],
-    tap: [],
-    updateState: []
+    tap: []
   };
 
   const ctx = {
@@ -110,9 +109,6 @@ const ModeHandler = function(mode, DrawContext) {
     },
     tap(event) {
       delegate('tap', event);
-    },
-    updateState(event) {
-      delegate('updateState', event);
     }
   };
 };
