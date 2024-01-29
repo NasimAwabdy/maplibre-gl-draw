@@ -136,7 +136,7 @@ ModeInterface.prototype.onUncombineFeature = function() {};
 /**
  * Triggered when the map update-state event is fired
  */
-ModeInterface.prototype.updateState = function() {};
+ModeInterface.prototype.OnUpdateState = function() {};
 
 /**
  * Triggered per feature on render to convert raw features into set of features for display on the map
