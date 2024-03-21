@@ -1,8 +1,8 @@
 {
   "name": "@mapbox/mapbox-gl-draw",
-  "version": "1.4.3",
-  "description": "A drawing component for Mapbox GL JS",
-  "homepage": "https://github.com/mapbox/mapbox-gl-draw",
+  "version": "1.4.4",
+  "description": "A drawing component for Maplibre GL JS",
+  "homepage": "https://github.com/NasimAwabdy/maplibre-gl-draw",
   "author": "mapbox",
   "license": "ISC",
   "main": "dist/mapbox-gl-draw.js",
