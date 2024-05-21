@@ -122,10 +122,7 @@ export default function(ctx) {
 
 
   events.keydown = function(event) {
-    const isMapElement = (event.srcElement || event.target).classList.contains('maplibregl-canvas');
-    if (!isMapElement) return; // we only handle events on the map
     currentMode.keydown(event);
-
   };
 
   events.keyup = function(event) {
